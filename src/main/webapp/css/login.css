@@ -1,0 +1,62 @@
+body
+{
+    margin: auto;
+    padding: 0;
+    font-family: 'Arial', fantasy;
+}
+.login{
+    width: 400px;
+    overflow: hidden;
+    margin: auto;
+    padding: 100px;
+    background: #ddadaf;
+    border-radius: 20px ;
+
+}
+h2{
+    text-align: center;
+    color: #ddadaf;
+    padding: 20px;
+}
+label{
+    color: #fffefe;
+}
+#email{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#password{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+.registerbtn {
+    background-color: #fffefe;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: hotpink;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    text-align: center;
+}

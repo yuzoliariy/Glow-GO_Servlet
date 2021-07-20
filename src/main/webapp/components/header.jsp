@@ -33,7 +33,7 @@
                 <a href="<c:url value="/productTypes"/>" class="w3-bar-item w3-button">category</a>
                 <a href="<c:url value="/login"/>" class="w3-bar-item w3-button">log in</a>
             </c:if>
-            <c:if test="${empty sessionScope.user == false}">
+            <c:if test="${empty sessionScope.user == false && sessionScope.user.userType == 'USER'}">
                 <a href="<c:url value="/about"/>" class="w3-bar-item w3-button">about</a>
                 <a href="<c:url value="/productTypes"/>" class="w3-bar-item w3-button">category</a>
                 <a href="<c:url value="/logout"/>" class="w3-bar-item w3-button">log out</a>
@@ -41,7 +41,13 @@
                 <a href="<c:url value="/profile"/>" class="w3-bar-item w3-button">profile</a>
                 <a href="<c:url value="/workers"/>" class="w3-bar-item w3-button">our workers</a>
             </c:if>
-
+            <c:if test="${empty sessionScope.user == false && sessionScope.user.userType == 'ADMIN'}">
+                <a href="<c:url value="/productTypes"/>" class="w3-bar-item w3-button">category</a>
+                <a href="<c:url value="/logout"/>" class="w3-bar-item w3-button">log out</a>
+                <a href="<c:url value="/profile"/>" class="w3-bar-item w3-button">profile</a>
+                <a href="<c:url value="/workers"/>" class="w3-bar-item w3-button">our workers</a>
+                <a href="<c:url value="/addProduct"/>" class="w3-bar-item w3-button">add product</a>
+            </c:if>
         </div>
     </div>
 </div>

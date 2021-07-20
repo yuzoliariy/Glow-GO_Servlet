@@ -16,7 +16,7 @@ public class DBConnection {
         }
         return conn;
     }
-
+// драйвер менеджер-елемент який керує драйверями,завантажуємо,робимо підключення після цього вертається конекшин
     private static Connection initConnection()
             throws SQLException {
 
